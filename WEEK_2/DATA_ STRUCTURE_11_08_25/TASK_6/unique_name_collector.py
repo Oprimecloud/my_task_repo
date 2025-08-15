@@ -7,5 +7,4 @@ attendace_name = set() # name store in set
 for i in range(5):
     students =(input("Enter name of people attending a seminar: "))
     attendace_name.add(students)
-alphabetical_order = list(attendace_name)
-print(alphabetical_order)
+print(f"unique name: {sorted(attendace_name)}")
