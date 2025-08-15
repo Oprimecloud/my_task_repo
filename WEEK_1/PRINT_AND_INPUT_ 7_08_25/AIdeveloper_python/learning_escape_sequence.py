@@ -31,3 +31,8 @@ print("Helloo\b")  # Output: Hello
 
 # Bell/alert (may or may not beep depending on environment)
 print("\a")  # Triggers a bell sound (if supported)
+
+# Using sep and end in print
+print("Python", "is", "fun", sep=" - ")
+print("This is the first line.", end=" ")
+print("This is the second line.")
