@@ -2,6 +2,3 @@
 # input
 word = str(input("ENTER A WORD: "))
 print("".join(reversed(word)))
-
-
-

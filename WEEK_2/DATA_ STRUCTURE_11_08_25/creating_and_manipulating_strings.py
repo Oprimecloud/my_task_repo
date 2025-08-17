@@ -42,7 +42,7 @@ print(sentence.lower())
 # strip 
 # Removes whitescaspe (or specified characters) from both end of the string.
 text = "  Abuja  "
-print(text.lstrip())
+print(text.strip())
 # output:Abuja
 
 # **replace()**
@@ -77,7 +77,7 @@ print(fruits.split())
 # output: ['mango', 'orange', 'banna']
 
 # rsplit
-# splits a using into a list from the right side.
+# splits a string into a list from the right side.
 text = "one,two,three,four"
 print(text.rsplit(",", 2))
 # output: ['one,two', 'three', 'four']
@@ -91,7 +91,7 @@ print(lines.splitlines())
 # join()
 # joins a list of strings into one string with a specified separator.
 words = ["I", "love", "Python"]
-print(" ".join(words))
+print((" ".join(words)))
 # output: I love Python
 
 # center()

@@ -59,6 +59,7 @@ print(position)
 # 8. dot count() method
 # counts how many times a value appears
 fruits = ["apple", "banana", "cherry", "banana"]
+print(fruits.count("banana"))
 # output: 2
 
 # 9. dot sort() method
