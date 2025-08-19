@@ -221,7 +221,7 @@ while True:
         print("Goodbye!")
         break
     print(f"Hello, {name}")
-    
+
 # ---> I used `break` here. If you dont know what it is or what it is doing, its OK. I will explain it next...
 ## Useful in chat-like applications, forms, or data entry programs where users may input multiple times until they decide to stop.
 
@@ -242,3 +242,118 @@ for num in range(1, 10):
 # Exit when user input matches a condition.
 
 # Prevent unnecessary iterations.
+
+#  2. Continue
+
+# - Skips the current iteration and moves to the next one. It is used if you want to ignore some values but keep the loop running.
+
+for num in range(1, 6):
+    if num == 3:
+        continue
+    print(num)
+
+# 3 is skipped, but the loop continues.
+
+## Some usecases
+
+#Skip invalid data.
+
+#Ignore unwanted characters (like spaces in a string).
+
+#Continue running but avoid certain cases, etc.
+
+# 3. Pass
+
+# - Does nothing. A placeholder to avoid errors. It is used If you haven’t written the code yet but want to keep the structure.
+
+for num in range(1, 6):
+    if num == 3:
+        pass   # do nothing for now
+    else:
+        print(num)
+
+# At num == 3, Python executes pass (nothing happens).
+
+## Some usecases
+
+# Writing code structure (to fill in later).
+
+# Placeholders in class/method definitions.
+
+# Temporarily disable parts of code.
+
+# Lets try while True again
+# Try and think through this...
+
+while True:
+    print("\nMenu:")
+    print("1. Say Hello")
+    print("2. Say Goodbye")
+    print("3. Exit")
+    
+    choice = input("Choose an option: ")
+    
+    if choice == "1":
+        print("Hello")
+    elif choice == "2":
+        print("Goodbye")
+    elif choice == "3":
+        print("Exiting program...")
+        break
+    else:
+        print("Invalid choice. Try again.")
+
+# Menu:
+# 1. Say Hello
+# 2. Say Goodbye
+# 3. Exit
+
+# Try and use while True for validation
+
+while True:
+    age = input("Enter your age: ")
+    if age.isdigit():
+        print(f"Your age is {age}")
+        break
+    else:
+        print("Invalid input. Please enter a number.")
+
+# LEets make a guess
+
+secret = "python"
+
+while True:
+    guess = input("Guess the secret word: ")
+    if guess.lower() == secret:
+        print("Correct! You guessed the word.")
+        break
+    else:
+        print("Wrong! Try again.")
+
+# Do you remember this?
+
+balance = 1000  
+
+while True:
+    print("\nATM Menu:")
+    print("1. Check Balance")
+    print("2. Withdraw")
+    print("3. Exit")
+
+    choice = input("Enter choice: ")
+
+    if choice == "1":
+        print(f"Your balance is: {balance}")
+    elif choice == "2":
+        amount = int(input("Enter withdrawal amount: "))
+        if amount <= balance:
+            balance -= amount
+            print(f"Withdrawal successful. New balance: {balance}")
+        else:
+            print("Insufficient funds.")
+    elif choice == "3":
+        print("Thank you for using our ATM. Goodbye!")
+        break
+    else:
+        print("Invalid option. Try again.")
+
