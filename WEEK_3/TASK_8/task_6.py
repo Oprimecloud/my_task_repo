@@ -9,12 +9,14 @@
 '''
 candidate_name = input("Enter your name: ")
 
+candidate_age = int(input(":Enter your age: "))
+
 UTME_score = int(input("Kindly enter your UTME Score: "))
 
 uni_choice = input("Did you choose UNILAG as first choice: ").title()
 
 Olevel_result = input("Do you have five credit in relevant O'level subjects including Mathematics and English at one sitting?: ").title()
 
-eligibility = (UTME_score >=200) and (uni_choice == "Yes") and (Olevel_result == "Yes")
+eligibility = (UTME_score >=200) and (candidate_age >= 16) and (uni_choice == "Yes") and (Olevel_result == "Yes")
 
 print(f"{candidate_name} eligibility status is {eligibility}.")
