@@ -127,7 +127,7 @@ for key, value in student.items():
 
 word = "PYTHON"
 for char in word:
-    print(char)
+    print(char) # to prevent the  string to be in a new each you can use end=""
 
 ## Some usecases
 # Counting vowels/consonants.
@@ -206,7 +206,7 @@ print("Access Granted!")
 
 # - You want to keep asking the user for input until a valid condition is met.
 
-# - You are building continuous programs like menus, login systems, or simulations.
+# - You are building continuous programs like menus, login systems, or stimulations.
 
 # ```
 # while True:
