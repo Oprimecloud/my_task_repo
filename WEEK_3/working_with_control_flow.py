@@ -342,7 +342,7 @@ while True:
 
     choice = input("Enter choice: ")
 
-    if choice == "1":
+    if choice == "1":  
         print(f"Your balance is: {balance}")
     elif choice == "2":
         amount = int(input("Enter withdrawal amount: "))
