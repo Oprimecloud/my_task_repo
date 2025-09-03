@@ -27,7 +27,8 @@
 #  Handling invalid inputs
 
 import math  # import math module for square root function
-print(f"\nBasic Calculator Program") #Welcome message
+print("\n|-------------------------------")
+print(f"| Basic Calculator Program") #Welcome message
 
 # Function added (addition, subtraction, multiplication, division, exponentiation)
 def add(a, b):
@@ -52,41 +53,59 @@ def exp(a, b):
 def main():
     while True:
         try: # Function for error handling, input validation
-            print("\nSelect Operation:")
-            print("1. Addition")
-            print("2. Subtraction")
-            print("3. Multiplication")
-            print("4. Division")
-            print("5. Exponentiation")
-            print("6. Square Root")
-            print("7. Exit")
+            print("|============+++++=============")
+            print("|Select Operation:")
+            print("|1. Addition")
+            print("|2. Subtraction")
+            print("|3. Multiplication")
+            print("|4. Division")
+            print("|5. Exponentiation")
+            print("|6. Square Root")
+            print("|7. Exit")
+            print("|============++++++==============")
 
 # Take input from the user for operation choice
-            choice = int(input("Enter Option (1 or 2 or 3 or 4 or 5 or 6 or 7): "))
+            choice = int(input(" Enter Option from 1 - 7): "))
             if choice in range(1,6):
-# Get two numbers asinput from the user
-                num1 = float(input("Enter first number: "))
-                num2 = float(input("Enter second number: "))
+# Get two numbers asinput from the usee
+                print("|~~~~~~~~~~~~~~~~~~~~~~~~|")
+                num1 = float(input("  Enter first number: "))
+                num2 = float(input("  Enter second number: "))
+                print("|~~~~~~~~~~~~~~~~~~~~~~~~|")
 
 # Perform calulation based on user,s choice
                 if choice == 1:
-                    print("Results:", add(num1, num2))
+                    print("  ><><><><><><><><><><>")
+                    print("  Results:", add(num1, num2))
+                    print("  ><><><><><><><><><><>")
                 elif choice == 2:
+                    print("  ><><><><><><><><><><>")
                     print("Results:", subtract(num1, num2))
+                    print("  ><><><><><><><><><><>")
                 elif choice == 3:
+                    print("  ><><><><><><><><><><>")
                     print("Results:", multiply(num1, num2))
+                    print("  ><><><><><><><><><><>")
                 elif choice == 4:
+                    print("  ><><><><><><><><><><>")
                     print("Result:", divide(num1, num2))
+                    print("  ><><><><><><><><><><>")
                 elif choice == 5:
+                    print("  ><><><><><><><><><><>")
                     print("Results:", exp(num1, num2))
+                    print("  ><><><><><><><><><><>")
             
             elif choice == 6:
-                num1 = float(input("Enter number: "))
+                print("|~~~~~~~~~~~~~~~~~~~~~~~~|")
+                num1 = float(input(" Enter number: "))
+                print("|~~~~~~~~~~~~~~~~~~~~~~~~|")
                 if num1 < 0:
                     print("Error: cannot calculate square root of a negative number.")
                 else:
                     result = math.sqrt(num1)
+                    print("  ><><><><><><><><><><>")
                     print("Result:",result)
+                    print("  ><><><><><><><><><><>")
             elif choice == 7:
                 print("Shutting calculator down.. 😃")
                 break
